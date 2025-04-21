@@ -7,7 +7,7 @@ on:
         branches: ["main"]
 
 jobs:
-    build-and-push:
+    build-and-push: # tên job
         runs-on: ubuntu-latest
 
         steps:
@@ -19,8 +19,8 @@ jobs:
                   password: ${{ secrets.DOCKER_PASSWORD }}
             - name: Build and Push images
               env:
-                  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-              run: |
+                  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }} # truyền vào biến trong docker-compose.yml
+              run: | # sử dụng '|' để run được nhiều command, default chỉ có 1 command
                   docker compose -f docker-compose.yml build discoveryserver
                   docker compose -f docker-compose.yml push discoveryserver
 
