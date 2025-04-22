@@ -24,7 +24,7 @@ jobs:
                   docker compose -f docker-compose.yml build discoveryserver
                   docker compose -f docker-compose.yml push discoveryserver
 
-    deploy:
+    deploy: # deploy
         needs: build-and-push
         runs-on: ubuntu-latest
         steps:
