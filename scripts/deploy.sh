@@ -1,8 +1,9 @@
+cd app/microservice-eventsourcing/
+
 BRANCH=$(git rev-parse --abbrev-ref HEAD) # lấy branch hiện tại đang thao tác và lưu vào biến
 
 echo "Deploying with branch: $BRANCH"
 
-cd app/microservice-eventsourcing/
 git fetch -a
 git checkout $BRANCH # sử dụng biến BRANCH
 git pull

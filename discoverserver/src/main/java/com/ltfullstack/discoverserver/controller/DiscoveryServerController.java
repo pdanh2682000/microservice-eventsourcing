@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DiscoveryServerController {
     @GetMapping()
     public String helloWorld(){
-        return "DanhUy học CI/CD";
+        return "DanhUy học CI/CD aaaaaaaaaaaaaaaaaa";
     }
 }
