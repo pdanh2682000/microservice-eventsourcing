@@ -13,7 +13,7 @@ public class DiscoverserverApplication {
 	private static final Logger logger = LoggerFactory.getLogger(DiscoverserverApplication.class);
 
 	public static void main(String[] args) {
-		logger.info("-------------------------- DA TEST CI/CD -----------------------");
+		logger.info("-------------------------- DA TEST CI/CD aaa -----------------------");
 		SpringApplication.run(DiscoverserverApplication.class, args);
 	}
 
